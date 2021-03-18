@@ -1,0 +1,97 @@
+/*
+  Componente: Main (CSS).
+  Funcionalidade: Componente principal (index) esse arquivo CSS é responsável pela estilização da tela principal.
+  Desenvolvedor: walisson.martins
+*/
+
+/* Css referente a estilização das fontes espaçamento e disposição dos elementos*/
+
+.font-style {
+    font-family: 'Marcellus', serif;
+    padding: 10px;
+    display: inline-flex;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Css ajusta a margem esquerda da imagem */
+
+.img-style {
+    margin-left: 5px;
+}
+
+/* estiliza o texto dentro do input  */
+
+.text-input {
+    font-family: 'Marcellus', serif;
+    color: #121216;
+}
+
+/* estiliza o input do formulário  */
+
+.form-input {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* estiliza o botão e incopora fonte e cor no botão */
+
+.btn-full-width {
+    font-family: 'Marcellus', serif;
+    color: #000;
+}
+
+/* estiliza a lista que foi disposta como container*/
+
+.list-container {
+    padding: 2%;
+    list-style: none;
+    font-family: 'Marcellus', serif;
+}
+
+/* estiliza o <li> que foi disposta como container*/
+
+.container-li {
+    display: block;
+    margin: 10%;
+}
+
+/* estiliza o container <ol> a lista */
+
+.list-repository {
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    font-family: 'Marcellus', serif;
+}
+
+/* estiliza a formatação da li dentro do ol */
+
+.format-li {
+    margin-top: 10px !important;
+    text-transform: uppercase;
+    align-items: flex-end;
+    font-family: 'Marcellus', serif;
+}
+
+/* estiliza a disposição dos conteúdos da lista */
+
+.container-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estiliza a cor da fonte (mensagem de erro)  */
+
+.danger {
+    margin: 20px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* estiliza o tamanho e o peso da fonte do nome do usuário  */
+
+.repositry-user {
+    font-size: 10px;
+    font-weight: bold;
+}

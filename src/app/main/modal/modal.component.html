@@ -1,0 +1,36 @@
+<!-- 
+  Componente: Modal (HTML).
+  Funcionalidade: Componente criado em Angular Material que mostrar uma janela pop-up que contém as informações do repositório do usuário passado por parâmetro do input (Component Main).
+  Desenvolvedor: walisson.martins
+ -->
+
+<!-- Div responsável por obter da APi do github os dados do usuário fornecido nos parâmetros do input -->
+<div class="container-modal">
+  <h1 mat-dialog-title>{{ repository.owner.login }}</h1>
+  <a href="{{ repository.owner.url }}">
+    <img width="60" height="60" src="{{ repository.owner.avatar_url }}" />
+  </a>
+</div>
+
+<!-- Div responsável por obter da APi do github os dados do usuário fornecido nos parâmetros do input, através do repository -->
+<div mat-dialog-content>
+  <h2 mat-dialog-title>{{ repository.name }}</h2>
+  <ul class="modal-list">
+    <li>
+      Nome repositório:
+      <a href="{{ repository.html_url }}"> {{ repository.full_name }}</a>
+    </li>
+    <li *ngIf="repository.description">
+      Descrição: {{ repository.description }}
+    </li>
+    <li *ngIf="repository.language">Linguagem: {{ repository.language }}</li>
+    <a
+      *ngIf="repository.homepage"
+      href="http://github.com/{{ repository.owner.login }}"
+      >Home Page</a
+    >
+    <li *ngIf="repository.updated_at">
+      Atualizado em: {{ repository.updated_at }}
+    </li>
+  </ul>
+</div>
