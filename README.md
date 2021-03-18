@@ -1,27 +1,46 @@
-# GitApp
+# Desafio referente ao processo seletivo de desenvolvedor Angular que encontra-se disponível na empresa Coopersystem.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+## Aplicação feita em Angular que faz utilização da Api do Github e lista todos os repositórios disponíveis de um usuário através de um campo input, e é possível visualizar os detalhes do projeto ao selecionar o repositório do usuário. 
 
-## Development server
+Passo a passo de como executar a aplicação em Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## projeto gitapp - coopersystem
 
-## Code scaffolding
+### 1° clonar este repositório na aba CODE em download ZIP
+```
+clonar repository com  git -> git clone https://github.com/walisson-martins/desafio-coopersystem.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 2° executar o comadno npm i (nom install) dentro da pasta git-app para instalar as dependências deste projeto
+```
+npm install
+```
 
-## Build
+### 3° executar o comadno ng serve para levantar o servidor localhost na porta localhost:4200
+```
+npm install && ng serve || ng serve 
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### 4° basta digitar localhost:4200 no navegador de sua preferência a aplicação estara disponível paa utilização
+```
+digite localhost:4200 no browser
+```
 
-## Running unit tests
+### Tecnologias utilizadas neste projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+Angular 11.1.2
+Angular Material 11.2.4
+rxjs 6.6.0
+jasmine 3.6.0
+karma 5.2.0
+typescript 4.1.2
+NodeJs 10.16.2
+flex-layout 12.0.0
+```
 
-## Running end-to-end tests
+### O desenvolvimento deste projeto leva em consideração as tecnologias informadas no arquivo [Desafio Coopersystem - Angular.pdf](https://github.com/walisson-martins/desafio-coopersystem/files/6166001/Desafio.Coopersystem.-.Angular.pdf) e está totalmente responsivo e testado através de teste de unidade com jasmine.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+O código que encontra-se disponível neste repositório está totalmente comentado (documentado), caso haja alguma dúvida em relação a qualquer comando ou queira saber mais alguma informação que não foi repassada, estarei a disposição através do email: walisson.martinsti@gmail.com 
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
