@@ -1,0 +1,52 @@
+<!-- 
+  Componente: Main (HTML).
+  Funcionalidade: Componente criado em Angular Material que mostrar uma janela pop-up que contém as informações do repositório do usuário passado por parâmetro do input (Component Main).
+  Desenvolvedor: walisson.martins
+ -->
+
+<h1 class="font-style">
+    Entre com seu nickname (Github)
+    <img class="img-style" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" width="30" height="30" />
+</h1>
+<hr />
+
+<form fxLayout="column" fxLayoutAlign="space-between" class="container form-input" method="GET">
+    <mat-form-field class="btn-full-width">
+        <mat-label class="text-input">
+            Digite o nickname do seu diretório no github (ex: alex-silva)
+        </mat-label>
+        <input matInput #message maxlength="256" /> {{ message.value.length }} / 256
+    </mat-form-field>
+    <hr />
+    <button (click)="buscarApi($event, message.value)" mat-raised-button color="primary">
+    Buscar
+  </button>
+    <!-- Span com condição lógica para renderizar ou ocultar uma mensagem para o usuário -->
+    <span *ngIf="mensagemErro" class="danger"> Usuário não encontrado! </span>
+    <span *ngIf="mensagemSucesso" class="success"> Usuário localizado! </span
+  >
+</form>
+
+<!-- div com condição lógica para renderizar ou ocultar as informações do repositório do usuário -->
+<div *ngIf="repository$ != undefined">
+  <ol *ngFor="let repositorys of repository$" class="list-repository">
+    <div class="repositry-user">
+      {{ repositorys.owner.login }}
+    </div>
+    <mat-card class="container-list">
+      <li class="format-li">
+        {{ repositorys.name }}
+      </li>
+
+      <button
+        color="primary"
+        aria-label="Example icon button with a menu icon"
+        mat-mini-fab
+        (click)="modalInfo(repositorys)"
+        mat-button
+      >
+        <mat-icon>filter_list</mat-icon>
+      </button>
+    </mat-card>
+  </ol>
+</div>
