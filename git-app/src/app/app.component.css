@@ -1,0 +1,32 @@
+/*
+  Componente: App (CSS).
+  Funcionalidade: CSS responsável pela estilização do Toolbar dentro app.component.html
+  Desenvolvedor: walisson.martins
+*/
+
+
+/* Estiliza o menu toolbar definindo disposição e responsividade */
+
+.tooblar {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estiliza o texto demtro toolbar */
+
+.text-toolbar {
+    font-family: 'Inconsolata', monospace;
+    display: inline;
+    margin-top: 10px;
+}
+
+
+/* Estiliza o container toobal */
+
+.container {
+    padding: 5% 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
